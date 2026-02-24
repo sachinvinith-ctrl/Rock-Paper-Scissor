@@ -1,0 +1,13 @@
+This is my first problem solving plan and I will highlight what are the premises for this project.
+
+
+Divide problems and solve it
+
+This section is for dividing the problems encountered by me in this project. 
+The core idea is that dividing a big problem to smaller problem will help me solve a problem easily. 
+This can be done solving smaller problems and connecting all the solutions to arrive at the desired output.
+
+1. First, create a function where the computer can return rock, paper or scissor randomly.
+ - Math.random() solves the issue of returning random number between 0 (included) and 1 (excluded).
+ - multiplication with 100 gives an idea between 100 and 0.
+ - For perfectly separating the three variables, separate number evenly so the result is equal to randomness.

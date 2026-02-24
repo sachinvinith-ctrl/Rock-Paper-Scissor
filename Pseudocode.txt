@@ -1,0 +1,12 @@
+Summary
+
+1. The game is called rock paper scissor.
+2. The user will input a Rock, paper or scissor in javascript console.
+3. Rock beats scissor, scissor beat paper, paper beat rock.
+4. The computer will play the game by choosing between the three words (i.e rock, paper or scissor) after user input.
+5. The computer will generate the words randomly.
+6. The result will be evaluated based on the player choice and computer choice.
+7. If one of them win once in a round that round is won.
+8. There are 5 rounds in which both user and computer can play.
+9. There are 5 rounds in one game.
+9. The player with highest amount of wins per game will ultimately win.

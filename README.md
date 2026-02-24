@@ -1,3 +1,3 @@
 # Rock-Paper-Scissor
 
-In this simple project I will be creating a small game playable from the javascript console (in-game browser)
+In this simple project I will be creating a small game playable from the javascript console (in-game browser). This project is recommended for by The Odin Project online resource.
