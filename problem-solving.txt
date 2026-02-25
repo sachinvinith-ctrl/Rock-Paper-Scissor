@@ -12,4 +12,16 @@ This can be done solving smaller problems and connecting all the solutions to ar
  - multiplication with 100 gives an idea between 100 and 0.
  - For perfectly obtaining the three variables randomly with equal probability, separate number evenly so the result is equal to randomness.
 
-2. Second, create a function that takes human value as input and returns it
+2. Second, create a function that takes human value as input and stores it and returns it.
+
+3. Now, the game need to store both human and computer score(i.e won by computer or human).
+ - create two variables that will store the score in global scope(i.e the scores are stored outside of functions).
+ - to do that the variables are first initialized with number 0.
+
+4. Now, i need to create a round to play.
+ - First, code a new function to take both player and computer choices.
+ - give two parameters to that function called computerChoice and humanChoice.
+ - now arguments can be passed to that function playRound through computerChoice and humanChoice.
+ - for first argument computerChoice the function getComputerChoice value will be passed through.
+ - for second argument humanChoice the function getHumanChoice value will be passed through.
+ - so, i need to pass two arguments to the playRound function parameter.

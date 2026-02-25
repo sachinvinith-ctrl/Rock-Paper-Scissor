@@ -22,12 +22,24 @@ let humanScore = 0;
 let computerScore = 0;
 
 function playRound(computerChoice, humanChoice) {
-  let humanPlay = humanChoice.toLowerCase();
+  let humanPlay = humanChoice;
+  humanPlay = humanPlay.toLowerCase();
+  console.log(humanPlay)
+  console.log(computerChoice)
   if (computerChoice === "paper" && humanPlay === "rock") {
       console.log("You lose! Paper beats rock"); 
     } else if (computerChoice === "rock" && humanPlay === "paper") {
-      console.log("You")
- }
-  
+      console.log("You Win! Paper beats rock");
+ }    else if (computerChoice === "paper" && humanPlay === "scissor") {
+      console.log("You Win! Scissor beats paper");
+}     else if (computerChoice === "scissor" && humanPlay === "paper") {
+      console.log("You Lose! Scissor beats paper");
+}    else if (computerChoice === "rock" && humanPlay === "scissor") {
+      console.log("You Lose! Rock beats Scissor"); 
+}   else if (computerChoice === "scissor" && humanPlay === "rock") {
+      console.log("You Win! Rock beats scissor");
+
+}
 }
 
+playRound(computerChoice, humanChoice)
