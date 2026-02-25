@@ -9,18 +9,25 @@ function getComputerChoice() {
 } 
 }
 
-getComputerChoice();
+let computerChoice = getComputerChoice();
 
 function getHumanChoice() {
-  let humanChoice = prompt("Choose between rock, paper and scissor");
-  return humanChoice;
+  let humanTurn = prompt("Choose between rock, paper and scissor");
+  return humanTurn;
 }
 
+let humanChoice = getHumanChoice();
 
 let humanScore = 0;
 let computerScore = 0;
 
 function playRound(computerChoice, humanChoice) {
   let humanPlay = humanChoice.toLowerCase();
-  console.log("You lose! Paper beats rock");
+  if (computerChoice === "paper" && humanPlay === "rock") {
+      console.log("You lose! Paper beats rock"); 
+    } else if (computerChoice === "rock" && humanPlay === "paper") {
+      console.log("You")
+ }
+  
 }
+
