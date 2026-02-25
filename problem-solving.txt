@@ -10,4 +10,6 @@ This can be done solving smaller problems and connecting all the solutions to ar
 1. First, create a function where the computer can return rock, paper or scissor randomly.
  - Math.random() solves the issue of returning random number between 0 (included) and 1 (excluded).
  - multiplication with 100 gives an idea between 100 and 0.
- - For perfectly separating the three variables, separate number evenly so the result is equal to randomness.
+ - For perfectly obtaining the three variables randomly with equal probability, separate number evenly so the result is equal to randomness.
+
+2. Second, create a function that takes human value as input and returns it
