@@ -9,19 +9,22 @@ function getComputerChoice() {
 } 
 }
 
-let computerChoice = getComputerChoice();
+let computerChoice = getComputerChoice;
 
 function getHumanChoice() {
   let humanTurn = prompt("Choose between rock, paper and scissor");
   return humanTurn;
 }
 
-let humanChoice = getHumanChoice();
+let humanChoice = getHumanChoice;
 
 let humanScore = 0;
 let computerScore = 0;
 
-function playRound(computerChoice, humanChoice) {
+function playGame() {
+  
+ 
+  function playRound(computerChoice, humanChoice) {
   let humanPlay = humanChoice;
   humanPlay = humanPlay.toLowerCase();
   console.log(humanPlay)
@@ -47,24 +50,22 @@ function playRound(computerChoice, humanChoice) {
 }   else { console.log("This round is tied");
     
 }
-
- console.log(computerScore, humanScore); 
-
-}
-
-function playGame() {
-  playRound(getComputerChoice(), getHumanChoice());
   
 } 
 
-playGame();
-playGame();
+playRound(humanChoice(), computerChoice());
+}
+
 playGame();
 playGame();
 playGame();
 
+console.log(computerScore, humanScore);
+
+
 if (computerScore > humanScore) {
   console.log("the computer wins")
-} else if (humanScore < computerScore) {
-  console.log
+} else if (humanScore > computerScore) {
+  console.log("You win this game")
 }
+ else { console.log("This game is tied") } 
