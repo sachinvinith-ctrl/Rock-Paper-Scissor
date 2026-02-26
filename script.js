@@ -52,4 +52,19 @@ function playRound(computerChoice, humanChoice) {
 
 }
 
-playRound(computerChoice, humanChoice)
+function playGame() {
+  playRound(getComputerChoice(), getHumanChoice());
+  
+} 
+
+playGame();
+playGame();
+playGame();
+playGame();
+playGame();
+
+if (computerScore > humanScore) {
+  console.log("the computer wins")
+} else if (humanScore < computerScore) {
+  console.log
+}
