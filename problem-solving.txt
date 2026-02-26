@@ -25,3 +25,11 @@ This can be done solving smaller problems and connecting all the solutions to ar
  - for first argument computerChoice the function getComputerChoice value will be passed through.
  - for second argument humanChoice the function getHumanChoice value will be passed through.
  - so, i need to pass two arguments to the playRound function parameter.
+ - when a player wins the round their score is incremented and added to the variable computerScore or humanScore depending on the winner.
+ - Increment the score inside playRound itself.
+ - There are two scenario one is when computer win and another is the user win.
+ - i need to find a way to increase a user score when they win, how can it be done?
+ - So it can be done to see if a string contains you win and you lose, if win the score is added if lose not add any score same for tie.
+ - log it into a score chart that determines what score it is based on the winner and loser.
+
+5.
