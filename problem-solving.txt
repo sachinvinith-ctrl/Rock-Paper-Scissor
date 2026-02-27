@@ -32,4 +32,12 @@ This can be done solving smaller problems and connecting all the solutions to ar
  - So it can be done to see if a string contains you win and you lose, if win the score is added if lose not add any score same for tie.
  - log it into a score chart that determines what score it is based on the winner and loser.
 
-5.
+5. Final part is to create a new function called playGame that will call playRound 5 times an keeps track of the score and give result based on the score.
+ - Create a new function called playGame.
+ - Call the function playRound 5 times from playGame.
+ - Record the scores, if 5 rounds are complete then determine winner based on the highest number of wins in a game(i.e five rounds).
+ - do code to determine how winner can be declared using score.
+  - After five rounds write if code to determine who is winner by comparison operator.
+  - if one is higher than the other then declare them winner if they get tied then tell it is tied.
+  - This score comparison only happens after the 5 rounds not in middle.
+  - The ultimate winner is decided by an if....else condition.
