@@ -68,14 +68,17 @@ function playGame() {
       alert(`Computer chose ${computerChoice}`);
       alert("You Win!");
       ++humanScore;
-}   else { console.log("This round is tied");
-           alert("Computer chose the same as you");
+}   else { console.log(`Computer chose ${computerChoice}`)
+           console.log(`You chose ${humanPlay}`);
+           console.log("This round is tied");
+           alert(`Computer chose ${computerChoice}`);
+           alert("This round is a tie");
 }
   
 } 
 
 playRound(humanChoice(), computerChoice());
-console.log(humanScore, computerScore);
+console.log(`User Score: ${humanScore}, Computer Score: ${computerScore}`);
 }
 
 playGame();
@@ -88,7 +91,7 @@ console.log(humanScore, computerScore);
 
 
 if (computerScore > humanScore) {
-  console.log("The computer wins!");
+  console.log("Computer is the final winner!");
 } else if (humanScore > computerScore) {
-  console.log("You win this game!");
-} else { console.log("This game is tied"); } 
+  console.log("You are the final winner!");
+} else { console.log("This full game is tied");} 
