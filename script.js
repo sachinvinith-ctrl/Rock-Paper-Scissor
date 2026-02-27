@@ -23,8 +23,7 @@ let computerScore = 0;
 
 function playGame() {
   
- 
-  function playRound(computerChoice, humanChoice) {
+  function playRound(humanChoice, computerChoice) {
   let humanPlay = humanChoice;
   humanPlay = humanPlay.toLowerCase();
   console.log(humanPlay)
@@ -54,13 +53,14 @@ function playGame() {
 } 
 
 playRound(humanChoice(), computerChoice());
+console.log(humanScore, computerScore);
 }
 
 playGame();
 playGame();
 playGame();
 
-console.log(computerScore, humanScore);
+console.log(humanScore, computerScore);
 
 
 if (computerScore > humanScore) {
