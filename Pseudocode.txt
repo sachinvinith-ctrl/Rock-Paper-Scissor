@@ -10,3 +10,6 @@ Summary
 8. There are 5 rounds in which both user and computer can play.
 9. There are 5 rounds in one game.
 9. The player with highest amount of wins per game will ultimately win.
+
+Add UI features to the rock paper scissors games
+
