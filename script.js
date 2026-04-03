@@ -81,7 +81,8 @@ playRound(humanChoice(), computerChoice());
 console.log(`User Score: ${humanScore}, Computer Score: ${computerScore}`);
 }
 
-playGame();
+
+
 
 
 console.log(humanScore, computerScore);
