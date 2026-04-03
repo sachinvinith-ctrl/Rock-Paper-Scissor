@@ -82,10 +82,7 @@ console.log(`User Score: ${humanScore}, Computer Score: ${computerScore}`);
 }
 
 playGame();
-playGame();
-playGame();
-playGame();
-playGame();
+
 
 console.log(humanScore, computerScore);
 
