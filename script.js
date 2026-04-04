@@ -85,7 +85,24 @@ playRound(playerSelection, cpuSelection);
 console.log(`User Score: ${humanScore}, Computer Score: ${computerScore}`);
 }
 
-playGame();
+
+const rockBtn = document.createElement("button");
+const paperBtn = document.createElement("button");
+const scissorBtn = document.createElement("button");
+
+const disorder = document.querySelector("ul");
+
+disorder.appendChild(rockBtn)
+disorder.appendChild(paperBtn)
+disorder.appendChild(scissorBtn)
+
+scissorBtn.textContent = "Scissor";
+rockBtn.textContent = "Rock";
+paperBtn.textContent = "Paper";
+
+rockBtn.addEventListener("click", () => "rock")
+rockBtn.addEventListener("click", () => "scissor")
+rockBtn.addEventListener("click", () => "paper")
 
 
 console.log(humanScore, computerScore);
