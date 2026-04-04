@@ -1,3 +1,5 @@
+const { createElement } = require("react");
+
 function getComputerChoice() {
   let computerTurn =  Math.random()*100;
   if (computerTurn <= 33.33) {
@@ -81,9 +83,13 @@ playRound(humanChoice(), computerChoice());
 console.log(`User Score: ${humanScore}, Computer Score: ${computerScore}`);
 }
 
+const scissorButton = document.createElement("button");
+const paperButton = document.createElement("button");
+const stoneButton = document.createElement("button");
 
-
-
+scissorButton.textContent = "Scissors";
+paperButton.textContent = "Paper";
+stoneButton.textContent = "Stone";
 
 console.log(humanScore, computerScore);
 
