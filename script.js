@@ -1,5 +1,3 @@
-const { createElement } = require("react");
-
 function getComputerChoice() {
   let computerTurn =  Math.random()*100;
   if (computerTurn <= 33.33) {
@@ -9,87 +7,86 @@ function getComputerChoice() {
 } else if (computerTurn <= 99.99) {
   return "scissor";
 } 
-}
+} // returns computer choice by string
 
-let computerChoice = getComputerChoice;
 
 function getHumanChoice() {
   let humanTurn = prompt("Choose between rock, paper and scissor");
   return humanTurn;
 }
 
-let humanChoice = getHumanChoice;
+// returns human choice by string.
+
+
 
 let humanScore = 0;
-let computerScore = 0;
+let computerScore = 0; // initialize scores
 
 function playGame() {
+
+let playerSelection = getHumanChoice(); // cpu and player selection results to a variable
+let cpuSelection = getComputerChoice();
   
-  function playRound(humanChoice, computerChoice) {
-  let humanPlay = humanChoice;
+  function playRound(playerSelection, cpuSelection) {
+  let humanPlay = playerSelection;
   humanPlay = humanPlay.toLowerCase();
-  if (computerChoice === "paper" && humanPlay === "rock") {
-      console.log(`Computer chose ${computerChoice}`);
+  if (cpuSelection === "paper" && humanPlay === "rock") {
+      console.log(`Computer chose ${cpuSelection}`);
       console.log(`You chose ${humanPlay}`);
       console.log("You lose! Paper beats rock");
-      alert(`Computer chose ${computerChoice}`);
+      alert(`Computer chose ${cpuSelection}`);
       alert("Computer Wins!");
       ++computerScore;
-    } else if (computerChoice === "rock" && humanPlay === "paper") {
-      console.log(`Computer chose ${computerChoice}`);
+    } else if (cpuSelection === "rock" && humanPlay === "paper") {
+      console.log(`Computer chose ${cpuSelection}`);
       console.log(`You chose ${humanPlay}`);
       console.log("You Win! Paper beats rock");
-      alert(`Computer chose ${computerChoice}`);
+      alert(`Computer chose ${cpuSelection}`);
       alert("You Win!");
       ++humanScore;
- }    else if (computerChoice === "paper" && humanPlay === "scissor") {
-      console.log(`Computer chose ${computerChoice}`);
+ }    else if (cpuSelection === "paper" && humanPlay === "scissor") {
+      console.log(`Computer chose ${cpuSelection}`);
       console.log(`You chose ${humanPlay}`);
       console.log("You Win! Scissor beats paper");
-      alert(`Computer chose ${computerChoice}`);
+      alert(`Computer chose ${cpuSelection}`);
       alert("You Win!");
       ++humanScore;
-}     else if (computerChoice === "scissor" && humanPlay === "paper") {
-      console.log(`Computer chose ${computerChoice}`);
+}     else if (cpuSelection === "scissor" && humanPlay === "paper") {
+      console.log(`Computer chose ${cpuSelection}`);
       console.log(`You chose ${humanPlay}`);
       console.log("You Lose! Scissor beats paper");
-      alert(`Computer chose ${computerChoice}`);
+      alert(`Computer chose ${cpuSelection}`);
       alert("Computer Wins!");
       ++computerScore;
-}    else if (computerChoice === "rock" && humanPlay === "scissor") {
-      console.log(`Computer chose ${computerChoice}`);
+}    else if (cpuSelection === "rock" && humanPlay === "scissor") {
+      console.log(`Computer chose ${cpuSelection}`);
       console.log(`You chose ${humanPlay}`);
       console.log("You Lose! Rock beats Scissor");
-      alert(`Computer chose ${computerChoice}`);
+      alert(`Computer chose ${cpuSelection}`);
       alert("Computer Wins!");
       ++computerScore;
-}   else if (computerChoice === "scissor" && humanPlay === "rock") {
-      console.log(`Computer chose ${computerChoice}`);
+}   else if (cpuSelection === "scissor" && humanPlay === "rock") {
+      console.log(`Computer chose ${cpuSelection}`);
       console.log(`You chose ${humanPlay}`);
       console.log("You Win! Rock beats scissor");
-      alert(`Computer chose ${computerChoice}`);
+      alert(`Computer chose ${cpuSelection}`);
       alert("You Win!");
       ++humanScore;
-}   else { console.log(`Computer chose ${computerChoice}`)
+}   else { console.log(`Computer chose ${cpuSelection}`)
            console.log(`You chose ${humanPlay}`);
            console.log("This round is tied");
-           alert(`Computer chose ${computerChoice}`);
+           alert(`Computer chose ${cpuSelection}`);
            alert("This round is a tie");
 }
   
 } 
 
-playRound(humanChoice(), computerChoice());
+playRound(playerSelection, cpuSelection);
 console.log(`User Score: ${humanScore}, Computer Score: ${computerScore}`);
 }
 
-const scissorButton = document.createElement("button");
-const paperButton = document.createElement("button");
-const stoneButton = document.createElement("button");
+playGame();
 
-scissorButton.textContent = "Scissors";
-paperButton.textContent = "Paper";
-stoneButton.textContent = "Stone";
 
 console.log(humanScore, computerScore);
 
