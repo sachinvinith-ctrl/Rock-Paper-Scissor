@@ -22,9 +22,9 @@ function getHumanChoice() {
 let humanScore = 0;
 let computerScore = 0; // initialize scores
 
-function playGame() {
+function playGame(buttonSelection) {
 
-let playerSelection = getHumanChoice(); // cpu and player selection results to a variable
+let playerSelection = buttonSelection; // cpu and player selection results to a variable
 let cpuSelection = getComputerChoice();
   
   function playRound(playerSelection, cpuSelection) {
@@ -100,12 +100,11 @@ scissorBtn.textContent = "Scissor";
 rockBtn.textContent = "Rock";
 paperBtn.textContent = "Paper";
 
-rockBtn.addEventListener("click", () => "rock")
-rockBtn.addEventListener("click", () => "scissor")
-rockBtn.addEventListener("click", () => "paper")
+rockBtn.addEventListener("click", () => playGame("rock"));
+scissorBtn.addEventListener("click", () => playGame("scissor"))
+paperBtn.addEventListener("click", () => playGame("paper"));
 
 
-console.log(humanScore, computerScore);
 
 
 if (computerScore > humanScore) {
