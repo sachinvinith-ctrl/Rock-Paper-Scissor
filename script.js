@@ -44,10 +44,6 @@ computerList.appendChild(computerWon);
 const newLine = document.createElement("br");
 const selectNewLine = document.querySelector(".ul-list")
 selectNewLine.appendChild(newLine);
-
-      
-      
-      console.log("You lose! Paper beats rock");
     
       ++computerScore;
     } else if (cpuSelection === "rock" && humanPlay === "paper") {
@@ -71,9 +67,6 @@ computerList.appendChild(computerWon);
 const newLine = document.createElement("br");
 const selectNewLine = document.querySelector(".ul-list")
 selectNewLine.appendChild(newLine);
-
-      
-      console.log("You Win! Paper beats rock");
       
       ++humanScore;
  }    else if (cpuSelection === "paper" && humanPlay === "scissor") {
@@ -96,9 +89,6 @@ computerList.appendChild(computerWon);
 const newLine = document.createElement("br");
 const selectNewLine = document.querySelector(".ul-list")
 selectNewLine.appendChild(newLine);
-
-      
-      console.log("You Win! Scissor beats paper");
       
       ++humanScore;
 }     else if (cpuSelection === "scissor" && humanPlay === "paper") {
@@ -124,7 +114,6 @@ const selectNewLine = document.querySelector(".ul-list")
 selectNewLine.appendChild(newLine);
 
       
-      console.log("You Lose! Scissor beats paper");
       
       ++computerScore;
 }    else if (cpuSelection === "rock" && humanPlay === "scissor") {
@@ -149,7 +138,6 @@ const selectNewLine = document.querySelector(".ul-list")
 selectNewLine.appendChild(newLine);
 
       
-      console.log("You Lose! Rock beats Scissor");
       
       ++computerScore;
 }   else if (cpuSelection === "scissor" && humanPlay === "rock") {
@@ -173,11 +161,6 @@ computerList.appendChild(computerWon);
 const newLine = document.createElement("br");
 const selectNewLine = document.querySelector(".ul-list")
 selectNewLine.appendChild(newLine);
-
-
-
-      
-      console.log("You Win! Rock beats scissor");
       
       ++humanScore;
 }   else { 
@@ -192,13 +175,15 @@ computerDiv.textContent = `Computer chose ${cpuSelection}`;
 const computer = document.querySelector(".ul-list");
 computer.appendChild(computerDiv);
 
+const gameTie = document.createElement("div");
+gameTie.textContent = "This round is a tie";
+const computerList = document.querySelector(".ul-list");
+computerList.appendChild(gameTie);
+
+
 const newLine = document.createElement("br");
 const selectNewLine = document.querySelector(".ul-list")
 selectNewLine.appendChild(newLine);
-
-console.log(`Computer chose ${cpuSelection}`)
-           console.log(`You chose ${humanPlay}`);
-           console.log("This round is tied");
            
 }
   
