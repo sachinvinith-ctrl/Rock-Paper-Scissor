@@ -191,6 +191,26 @@ selectNewLine.appendChild(newLine);
 
 playRound(playerSelection, cpuSelection);
 
+const scoreBoard = document.createElement("div");
+scoreBoard.textContent = `User Score: ${humanScore}, Computer Score: ${computerScore}`
+const selectBoard = document.querySelector(".ul-list");
+selectBoard.appendChild(scoreBoard);
+
+const newLine = document.createElement("br");
+const selectNewLine = document.querySelector(".ul-list")
+selectNewLine.appendChild(newLine);
+
+if (computerScore == 5) {
+  console.log("Computer is the final winner!");
+  computerScore = 0;
+  humanScore = 0;
+} else if (humanScore == 5) {
+  console.log("You are the final winner!");
+  computerScore = 0;
+  humanScore = 0;
+} else if (computerScore == 5 && humanScore == 5) {
+   console.log("This full game is tied");
+}
 
 console.log(`User Score: ${humanScore}, Computer Score: ${computerScore}`);
 }
@@ -216,9 +236,5 @@ paperBtn.addEventListener("click", () => playGame("paper"));
 
 
 
-if (computerScore > humanScore) {
-  console.log("Computer is the final winner!");
-} else if (humanScore > computerScore) {
-  console.log("You are the final winner!");
-} else { console.log("This full game is tied");} 
+
 
