@@ -203,7 +203,7 @@ selectNewLine.appendChild(newLine);
 
 if (humanScore == 5) {
   const finalRound = document.createElement("div");
-  const selectFinal = document.querySelector(".ul-list");
+  const selectFinal = document.querySelector(".ul-list");  
   finalRound.textContent = `Yay..You won the game!`
   finalRound.style.color = "green";
   selectFinal.appendChild(finalRound);
@@ -229,7 +229,7 @@ console.log(`User Score: ${humanScore}, Computer Score: ${computerScore}`);
 }
 
 
-const rockBtn = document.createElement("button");
+const rockBtn = document.createElement("button");// Add buttons for choosing
 const paperBtn = document.createElement("button");
 const scissorBtn = document.createElement("button");
 
@@ -243,7 +243,7 @@ scissorBtn.textContent = "Scissor";
 rockBtn.textContent = "Rock";
 paperBtn.textContent = "Paper";
 
-rockBtn.addEventListener("click", () => playGame("rock"));
+rockBtn.addEventListener("click", () => playGame("rock"));// Action to do after a button is clicked
 scissorBtn.addEventListener("click", () => playGame("scissor"))
 paperBtn.addEventListener("click", () => playGame("paper"));
 
