@@ -200,16 +200,29 @@ const newLine = document.createElement("br");
 const selectNewLine = document.querySelector(".ul-list")
 selectNewLine.appendChild(newLine);
 
-if (computerScore == 5) {
-  console.log("Computer is the final winner!");
+
+if (humanScore == 5) {
+  const finalRound = document.createElement("div");
+  const selectFinal = document.querySelector(".ul-list");
+  finalRound.textContent = `Yay..You won the game!`
+  finalRound.style.color = "green";
+  selectFinal.appendChild(finalRound);
+  const newLine = document.createElement("br");
+const selectNewLine = document.querySelector(".ul-list")
+selectNewLine.appendChild(newLine);
   computerScore = 0;
   humanScore = 0;
-} else if (humanScore == 5) {
-  console.log("You are the final winner!");
+} else if (computerScore == 5) {
+   const finalRound = document.createElement("div");
+   const selectFinal = document.querySelector(".ul-list");
+   finalRound.textContent = `Darn..You lost this game`
+   finalRound.style.color = "Red";
+   selectFinal.appendChild(finalRound);
+  const newLine = document.createElement("br");
+const selectNewLine = document.querySelector(".ul-list")
+selectNewLine.appendChild(newLine);
   computerScore = 0;
   humanScore = 0;
-} else if (computerScore == 5 && humanScore == 5) {
-   console.log("This full game is tied");
 }
 
 console.log(`User Score: ${humanScore}, Computer Score: ${computerScore}`);
