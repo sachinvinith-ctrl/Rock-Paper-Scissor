@@ -32,7 +32,7 @@ const select = document.querySelector(".ul-list");
 select.appendChild(playerDiv);
 
 const computerDiv = document.createElement("div");
-computerDiv.textContent = `Computer chose ${cpuSelection}`;
+computerDiv.textContent = `Computer chose ${cpuSelection} \n\n`;
 const computer = document.querySelector(".ul-list");
 computer.appendChild(computerDiv);
 
@@ -40,9 +40,13 @@ const computerWon = document.createElement("div");
 computerWon.textContent = `You lose... computer selected ${cpuSelection}`;
 const computerList = document.querySelector(".ul-list");
 computerList.appendChild(computerWon);
+
+const newLine = document.createElement("br");
+const selectNewLine = document.querySelector(".ul-list")
+selectNewLine.appendChild(newLine);
+
       
-      console.log(`Computer chose ${cpuSelection}`);
-      console.log(`You chose ${humanPlay}`);
+      
       console.log("You lose! Paper beats rock");
     
       ++computerScore;
@@ -64,8 +68,11 @@ computerWon.textContent = `You Win! computer selected ${cpuSelection}`;
 const computerList = document.querySelector(".ul-list");
 computerList.appendChild(computerWon);
 
-      console.log(`Computer chose ${cpuSelection}`);
-      console.log(`You chose ${humanPlay}`);
+const newLine = document.createElement("br");
+const selectNewLine = document.querySelector(".ul-list")
+selectNewLine.appendChild(newLine);
+
+      
       console.log("You Win! Paper beats rock");
       
       ++humanScore;
@@ -86,8 +93,11 @@ computerWon.textContent = `You Win! computer selected ${cpuSelection}`;
 const computerList = document.querySelector(".ul-list");
 computerList.appendChild(computerWon);
 
-      console.log(`Computer chose ${cpuSelection}`);
-      console.log(`You chose ${humanPlay}`);
+const newLine = document.createElement("br");
+const selectNewLine = document.querySelector(".ul-list")
+selectNewLine.appendChild(newLine);
+
+      
       console.log("You Win! Scissor beats paper");
       
       ++humanScore;
@@ -108,8 +118,12 @@ computerWon.textContent = `You lose... computer selected ${cpuSelection}`;
 const computerList = document.querySelector(".ul-list");
 computerList.appendChild(computerWon);
 
-      console.log(`Computer chose ${cpuSelection}`);
-      console.log(`You chose ${humanPlay}`);
+
+const newLine = document.createElement("br");
+const selectNewLine = document.querySelector(".ul-list")
+selectNewLine.appendChild(newLine);
+
+      
       console.log("You Lose! Scissor beats paper");
       
       ++computerScore;
@@ -130,8 +144,11 @@ computerWon.textContent = `You lose... computer selected ${cpuSelection}`;
 const computerList = document.querySelector(".ul-list");
 computerList.appendChild(computerWon);
 
-      console.log(`Computer chose ${cpuSelection}`);
-      console.log(`You chose ${humanPlay}`);
+const newLine = document.createElement("br");
+const selectNewLine = document.querySelector(".ul-list")
+selectNewLine.appendChild(newLine);
+
+      
       console.log("You Lose! Rock beats Scissor");
       
       ++computerScore;
@@ -153,10 +170,13 @@ computerWon.textContent = `You Win! computer selected ${cpuSelection}`;
 const computerList = document.querySelector(".ul-list");
 computerList.appendChild(computerWon);
 
+const newLine = document.createElement("br");
+const selectNewLine = document.querySelector(".ul-list")
+selectNewLine.appendChild(newLine);
 
 
-      console.log(`Computer chose ${cpuSelection}`);
-      console.log(`You chose ${humanPlay}`);
+
+      
       console.log("You Win! Rock beats scissor");
       
       ++humanScore;
@@ -171,6 +191,10 @@ const computerDiv = document.createElement("div");
 computerDiv.textContent = `Computer chose ${cpuSelection}`;
 const computer = document.querySelector(".ul-list");
 computer.appendChild(computerDiv);
+
+const newLine = document.createElement("br");
+const selectNewLine = document.querySelector(".ul-list")
+selectNewLine.appendChild(newLine);
 
 console.log(`Computer chose ${cpuSelection}`)
            console.log(`You chose ${humanPlay}`);
